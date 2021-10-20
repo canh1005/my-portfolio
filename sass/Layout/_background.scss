@@ -1,0 +1,19 @@
+.background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+    }
+    #moon{
+        opacity: 0;
+        display: block;
+        width: 200px;
+        height: 98px;
+    }
+}

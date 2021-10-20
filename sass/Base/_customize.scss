@@ -1,0 +1,21 @@
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    span{
+        @include Text(60px,$color-white);
+    }
+    &:hover{
+        background: none!important;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.owl-next{
+    left: unset;
+    right: 3%;
+}
+.owl-nav{
+    margin: 0!important;
+}

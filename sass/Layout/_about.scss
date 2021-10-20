@@ -1,0 +1,36 @@
+.about{
+    .about__content{
+        @include glassBG();
+        @include Container();
+        .about__item{
+            div{
+                display: flex;
+                align-items: center;
+            }
+            i{
+                margin-right: $mg-1;
+            }
+            .about__icon{
+                background-color: $color-blue-4;
+                border: 1px solid black;
+                padding: $pd-0 $pd-1;
+                min-width: 100px;
+                margin: $mg-1;
+            }
+            span{
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+@media screen and (max-width:767.98px) {
+    .about{
+        .about__content{
+            .about__item{
+                div{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

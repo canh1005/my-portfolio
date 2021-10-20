@@ -1,0 +1,30 @@
+.resume{
+    .resume__content{
+        @include glassBG();
+        @include Container();
+        h2{
+            border-bottom: 1px solid $color-black;
+        }
+        .education{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .experience{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .education__item,.experience__item{
+            width: calc(100% - 60px);
+            @include glassBG();
+            margin: $mg-3 0;
+            padding: $pd-1;
+            ul{
+                li{
+                    list-style: square;
+                }
+            }
+        }
+    }
+}

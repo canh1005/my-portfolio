@@ -1,0 +1,29 @@
+@mixin glassBG {
+    background: rgba(255,255,255,0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    border-top: 1px solid rgba($color: $color-white, $alpha: 0.5);
+    border-left: 1px solid rgba($color: $color-white, $alpha: 0.5);
+    backdrop-filter: blur(5px);
+}
+
+@mixin Text($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin Text_a() {
+    @include Text($fs-0,$color-purple-2);
+        font-weight: $fw-600;
+        &:hover{
+            color: $color-purple-1;
+        }
+}
+
+@mixin Container() {
+    width: calc(100% - 60px);
+    margin: auto;
+    padding: $mg-3;
+    padding-top: $mg-3 + 70;
+    margin-top: $mg-3;
+}

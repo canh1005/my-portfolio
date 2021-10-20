@@ -1,0 +1,62 @@
+.contact{
+    .contact__content{
+        @include glassBG();
+        @include Container();
+        .getintouch{
+            text-align: center;
+        }
+        .contact__items{
+            .contact__form{
+                #message{
+                    resize: none;
+                }
+                button{
+                    width: 30%;
+                    margin: auto;
+                    i{
+                        transform: rotate(40deg);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1023.98px) {
+    .contact{
+        .contact__content{
+            .contact__items{
+                flex-direction: column;
+                align-items: center;
+                .info{
+                    text-align: center;
+                    ul{
+                        padding: 0;
+                    }
+                }
+                .contact__form{
+                    button{
+                        width: calc(100% - 60px);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:423.98px) {
+    .contact{
+        .contact__content{
+            .contact__items{
+                .info{
+                    p{
+                        word-break: break-all;
+                    }
+                }
+                .contact__form{
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
