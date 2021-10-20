@@ -82,7 +82,7 @@ header .header__content {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   margin: 0 20px;
 }
 
@@ -158,7 +158,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   width: calc(100% - 60px);
   margin: auto;
   padding: 20px;
@@ -252,7 +252,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   width: calc(100% - 60px);
   margin: auto;
   padding: 20px;
@@ -293,7 +293,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   width: calc(100% - 60px);
   margin: auto;
   padding: 20px;
@@ -324,7 +324,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   margin: 20px 0;
   padding: 10px;
 }
@@ -339,7 +339,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   width: calc(100% - 60px);
   margin: auto;
   padding: 20px;
@@ -359,7 +359,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   padding: 10px;
   margin: 10px 5px;
 }
@@ -440,7 +440,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   width: calc(100% - 60px);
   margin: auto;
   padding: 20px;
@@ -515,7 +515,7 @@ header .header__content .header__mobi li a:hover {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   width: calc(100% - 60px);
   margin: auto;
   padding: 20px;
