@@ -10,6 +10,7 @@
     }
     #moon{
         background-color: $color-white;
+        transition: all .5s;
         opacity: 0;
     }
     #sun,#dawn,#sun1,#dusk,#moon{
@@ -72,5 +73,12 @@
     }
     100%{
         transform: translateY(0);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .background{
+        #dawn,#dusk,#sun,#sun1,#moon{
+            display: none;
+        }
     }
 }

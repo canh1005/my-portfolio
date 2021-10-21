@@ -68,7 +68,7 @@ window.addEventListener('scroll', function () {
         moon.style.bottom = 0;
         moon.style.right = 0;
         star.style.opacity = 1;
-        moon.style.transform = 'translateY(-500px)'
+        moon.style.transform = 'translate(-100px,-500px)';
         body.style.background = 'linear-gradient(to bottom,#232526, #414345)';
     }
 })

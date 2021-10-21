@@ -11,12 +11,12 @@
             @include glassBG();
             padding: $pd-1;
             margin: $mg-1 $mg-0;
-            // &:hover{
-            //     .skill__body{
-            //         max-height: 100px;
-            //         opacity: 1;
-            //     }
-            // }
+            &:hover{
+                .skill__body{
+                    max-height: 100px;
+                    opacity: 1;
+                }
+            }
             .skill__header{
                 @include Text($fs-4,$color-black);
                 font-weight: $fw-600;
@@ -24,9 +24,9 @@
                 margin-bottom: $mg-2;
             }
             .skill__body{
-                // max-height: 0;
+                max-height: 0;
                 transition: all .5s;
-                // opacity: 0;
+                opacity: 0;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
@@ -70,6 +70,11 @@
     .skill{
         .skill__content{
             .skill__item{
+                &:hover{
+                    .skill__body{
+                        max-height: inherit;
+                    }
+                }
                 .skill__body{
                     flex-wrap: wrap;
                     .skill__logo,.skill__text{
@@ -94,4 +99,7 @@
             
         }
     }
+}
+@media (hover:hover){
+
 }
