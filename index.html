@@ -43,17 +43,22 @@
 </head>
 
 <body>
+    <div class="preloader" id="preloader">
+        <img src="./assets/img/palmleaf1.png" alt="" id="palmleaf1">
+        <img src="./assets/img/palmleaf2.png" alt="" id="palmleaf2">
+        <span class="preloader__text">Welcome</span>
+    </div>
     <div class="background">
-        <img
-            src="./assets/img/sun2.png"
-            alt="sun"
-            id="sun"
-        >
-        <img
-            src="./assets/img/moon2.png"
-            alt="moon"
-            id="moon"
-        >
+        <div id="dawn"></div>
+        <div id="sun"></div>
+        <div id="sun1"></div>
+        <div id="dusk"></div>
+        <div id="moon"></div>
+        <img src="./assets/img/stars.png" alt="" id="star">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
     </div>
     <!-- Header -->
     <header>
@@ -481,7 +486,7 @@
                             <div
                                 id="emailHelp"
                                 class="form-text"
-                            >We'll never share your email with anyone else.</div>
+                            ></div>
                         </div>
                         <div class="mb-3 col-sm-12 col-md-6">
                             <label
@@ -492,7 +497,12 @@
                                 type="text"
                                 class="form-control"
                                 id="name"
+                                aria-describedby="nameHelp"
                             >
+                            <div
+                                id="nameHelp"
+                                class="form-text"
+                            ></div>
                         </div>
                         <div class="mb-3 col-12">
                             <label
@@ -503,7 +513,12 @@
                                 type="text"
                                 class="form-control"
                                 id="subject"
+                                aria-describedby="subjectHelp"
                             >
+                            <div
+                                id="subjectHelp"
+                                class="form-text"
+                            ></div>
                         </div>
                         <div class="mb-3 col-12">
                             <label
@@ -515,10 +530,15 @@
                                 id="message"
                                 rows="3"
                             ></textarea>
+                            <div
+                                id="messageHelp"
+                                class="form-text"
+                            ></div>
                         </div>
                         <button
-                            type="submit"
+                            type="button"
                             class="btn btn-primary"
+                            onclick="submitEmail()"
                         >Send message <i class="fas fa-location-arrow"></i></button>
                     </form>
                 </div>
@@ -554,6 +574,14 @@
                 }
             }
         })
+    </script>
+    <!-- Preload -->
+    <script>
+        setTimeout(function(){
+            let loader = document.getElementById('preloader');
+            loader.style.opacity = 0;
+            loader.style.display = 'none';
+        },4000)
     </script>
     <!-- Optional JS -->
     <script src="./js/Validation.js"></script>
