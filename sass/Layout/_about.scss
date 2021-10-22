@@ -6,15 +6,17 @@
             div{
                 display: flex;
                 align-items: center;
+                @include Text($fs-0, $color-white);
+                font-weight: $fw-600;
             }
             i{
                 margin-right: $mg-1;
             }
             .about__icon{
-                background-color: $color-blue-4;
-                border: 1px solid black;
+                background: linear-gradient(30deg, $color-purple-2 50%,$color-purple-1 100%);
+                border: 1px solid $color-black;
                 padding: $pd-0 $pd-1;
-                min-width: 100px;
+                width: 115px;
                 margin: $mg-1;
             }
             span{

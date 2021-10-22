@@ -7,19 +7,34 @@ header{
         @include glassBG();
         backdrop-filter: blur(5px);
         margin: 0 $mg-3;
+        .navbar-brand{
+            span{
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to right,$color-blue-5,$color-blue-3);
+                font-weight: $fw-700;
+                color: transparent;
+            }
+        }
         #navbarNav{
             flex-grow: unset;
         }
         .navbar-toggler{
             &:focus{
                 box-shadow: none;
+                border: 1px solid $color-purple-2;
             }
             span{
                 font-size: $fs-4;
             }
         }
+        .navbar-toggler.collapsed{
+            border: none;
+        }
         .header__desktop{
             .nav-item{
+                .nav-link.active{
+                    color: $color-purple-1;
+                }
                 a{
                     @include Text_a();
                 }
@@ -42,6 +57,7 @@ header{
                 }
                 a{
                     @include Text_a();
+                    font-weight: $fw-700;
                 }
             }
         }

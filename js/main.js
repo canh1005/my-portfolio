@@ -118,14 +118,42 @@ function submitEmail() {
     isValid = validation.kiemTraRong(subject, 'subjectHelp', "*Name can't be blank!");
     isValid = validation.kiemTraRong(message, 'messageHelp', "**Write something, please!");
     if (isValid) return;
-    // emailSend(email, firstName, lastName, message);
-    // resetInput();
+    emailSend(email, name, subject, message);
+    resetInput();
 }
 // Input reset
 function resetInput() {
-    getEle("emailInput").value = '';
-    getEle('firstNameInput').value = '';
-    getEle('lastNameInput').value = '';
-    getEle('messageInput').value = '';
+    getEle("email").value = '';
+    getEle('name').value = '';
+    getEle('subject').value = '';
+    getEle('message').value = '';
+}
+// Email send function
+function emailSend(email, name, subject, message) {
+
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "nguyenhuucanh1505@gmail.com",
+        Password: "ffrvlwffwnwzezlu",
+        To: "nguyenhuucanh1505@gmail.com",
+        From: `${email}`,
+        Subject: `${subject}`,
+        Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+    }).then((message) => {
+        getEle('noti').style.display = 'block'
+        getEle('noti').innerHTML = "Thank you for your interest! The mail has been sent!"
+        setTimeout(() => {
+            getEle('noti').style.display = 'none'
+        }, 5000)
+    })
 }
 
+//Add active class for header
+var li = document.getElementsByClassName('nav-link');
+for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}

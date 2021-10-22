@@ -14,5 +14,11 @@
     h1{
         text-align: center;
         margin-bottom: $mg-3 + 10;
+        font-weight: $fw-700;
+        -webkit-text-stroke-color: $color-black;
+        -webkit-text-stroke-width: 1px;
+        span{
+            color: $color-orange-3;
+        }
     }
 }

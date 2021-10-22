@@ -2,10 +2,25 @@
     .contact__content{
         @include glassBG();
         @include Container();
+        padding-bottom: $pd-3 + 50;
         .getintouch{
             text-align: center;
+            @include Text($fs-3,$color-white);
         }
         .contact__items{
+            @include Text($fs-0,$color-white);
+            .info{
+                ul{
+                    li{
+                        span{
+                            font-size: $fs-4;
+                            i{
+                                color: $color-orange-2;
+                            }
+                        }
+                    }
+                }
+            }
             .contact__form{
                 #message{
                     resize: none;
@@ -16,6 +31,13 @@
                     i{
                         transform: rotate(40deg);
                     }
+                }
+                .helpText{
+                    @include Text($fs-3,$color-orange-0);
+                }
+                #noti{
+                    @include Text($fs-3,$color-orange-0);
+                    text-align: center;
                 }
             }
         }

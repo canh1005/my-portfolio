@@ -34,6 +34,16 @@
         rel="stylesheet"
         href="./css/owl.theme.default.min.css"
     >
+    <!-- AOS CSS -->
+    <link
+        rel="stylesheet"
+        href="./css/aos.css"
+    >
+    <link
+        rel="shortcut icon"
+        href="./assets/img/portfolio-icon.ico"
+        type="image/x-icon"
+    >
     <!-- Main Css -->
     <link
         rel="stylesheet"
@@ -42,10 +52,25 @@
     <title>Portfolio</title>
 </head>
 
-<body>
-    <div class="preloader" id="preloader">
-        <img src="./assets/img/palmleaf1.png" alt="" id="palmleaf1">
-        <img src="./assets/img/palmleaf2.png" alt="" id="palmleaf2">
+<body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+>
+    <div
+        class="preloader"
+        id="preloader"
+    >
+        <img
+            src="./assets/img/palmleaf1.png"
+            alt=""
+            id="palmleaf1"
+        >
+        <img
+            src="./assets/img/palmleaf2.png"
+            alt=""
+            id="palmleaf2"
+        >
         <span class="preloader__text">Welcome</span>
     </div>
     <div class="background">
@@ -54,11 +79,27 @@
         <div id="sun1"></div>
         <div id="dusk"></div>
         <div id="moon"></div>
-        <img src="./assets/img/stars.png" alt="" id="star">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
+        <img
+            src="./assets/img/stars.png"
+            alt=""
+            id="star"
+        >
+        <div
+            class="wave"
+            id="wave1"
+        ></div>
+        <div
+            class="wave"
+            id="wave2"
+        ></div>
+        <div
+            class="wave"
+            id="wave3"
+        ></div>
+        <div
+            class="wave"
+            id="wave4"
+        ></div>
     </div>
     <!-- Header -->
     <header>
@@ -68,7 +109,7 @@
                     <a
                         class="navbar-brand"
                         href="#"
-                    >Huu Canh</a>
+                    ><span>Huu Canh</span></a>
                     <!-- Collapse button -->
                     <button
                         class="navbar-toggler"
@@ -127,29 +168,29 @@
                         </ul>
                         <!-- Header Mobi -->
                         <ul class="header__mobi row">
-                            <li class="col-4">
+                            <li class="col-4 nav-item">
                                 <i class="fas fa-home"></i>
-                                <a href="#home">Home</a>
+                                <a class="nav-link" href="#home">Home</a>
                             </li>
-                            <li class="col-4">
+                            <li class="col-4 nav-item">
                                 <i class="fas fa-address-card"></i>
-                                <a href="#about">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
-                            <li class="col-4">
+                            <li class="col-4 nav-item">
                                 <i class="fas fa-briefcase"></i>
-                                <a href="#resume">Resume</a>
+                                <a class="nav-link" href="#resume">Resume</a>
                             </li>
-                            <li class="col-4">
+                            <li class="col-4 nav-item">
                                 <i class="fas fa-clipboard-list"></i>
-                                <a href="#skill">Skill</a>
+                                <a class="nav-link" href="#skill">Skill</a>
                             </li>
-                            <li class="col-4">
+                            <li class="col-4 nav-item">
                                 <i class="fas fa-image"></i>
-                                <a href="#portfolio">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
-                            <li class="col-4">
+                            <li class="col-4 nav-item">
                                 <i class="fas fa-envelope"></i>
-                                <a href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -166,8 +207,8 @@
             <div class="home__text col">
                 <h2>Hi, I'm Nguyen Huu Canh</h2>
                 <p>A front-end developer</p>
-                <p>My objective is takes advantages of programming skills and experience to become a professional
-                    developer. In addition, I also enjoy learning new technology to improve my programming skills and
+                <p>My objective is to take advantage of programming skills and experience to become a professional
+                    developer. In addition, I also enjoy learning new techniques to improve my programming skills and
                     create a good experience for applications.</p>
                 <button class="btn">
                     <a
@@ -190,7 +231,7 @@
         id="about"
     >
         <div class="about__content">
-            <h1>About Me</h1>
+            <h1>About <span>Me</span></h1>
             <div class="row about__detail">
                 <div class="col-12 col-lg-6 about__item">
                     <div>
@@ -224,9 +265,9 @@
             <div class="social__content">
                 <ul class="social__list">
                     <li class="social__link">
-                        <a href="#">
+                        <a href="https://join.skype.com/invite/l5yf0TE6CvFE">
                             <i class="fab fa-skype"></i>
-                            <p></p>
+                            <p>join.skype.com/invite/l5yf0TE6CvFE</p>
                         </a>
                     </li>
                     <li class="social__link">
@@ -251,32 +292,56 @@
         id="resume"
     >
         <div class="resume__content">
-            <h1>My Resume</h1>
-            <div class="education">
+            <h1>My <span>Resume</span></h1>
+            <div
+                class="education"
+                data-aos="fade-right"
+            >
                 <h2>Education</h2>
-                <div class="education__item">
+                <div
+                    class="education__item"
+                    data-aos="fade-right"
+                >
                     <h4>Ton Duc Thang University</h4>
                     <p>May 2015 - September 2020</p>
                     <ul>
                         <li>Major: Information System</li>
-                        <li>GPA: 7.09</li>
+                        <li>GPA: 7.09/10</li>
                     </ul>
                 </div>
             </div>
-            <div class="experience">
+            <div
+                class="experience"
+                data-aos="fade-left"
+            >
                 <h2>Experience</h2>
-                <div class="experience__item">
+                <div
+                    class="experience__item"
+                    data-aos="fade-left"
+                >
                     <h4>FPT software - internship</h4>
                     <p>April 2018 - July 2018</p>
                     <ul>
-                        <li>Learn about SAP system and ABAP language: + Keywords, select statement + Create domain,
-                            element, field + Table maintenance + Selection screen + Functional module + Create ALV
-                            reports + Design smartforms according to customers requirements</li>
+                        <li>
+                            <ul class="sub__list">Learn about SAP system and ABAP language:
+                                <li class="sub__item">Keywords, select statement</li>
+                                <li class="sub__item">Create domain, element, field</li>
+                                <li class="sub__item">Table maintenance</li>
+                                <li class="sub__item">Selection screen</li>
+                                <li class="sub__item">Functional module</li>
+                                <li class="sub__item">Create ALV reports</li>
+                                <li class="sub__item">Design smartforms according to customers requirements</li>
+                            </ul>
+
+                        </li>
                         <li>Practice testing process</li>
                         <li>Presentation on assigned topic</li>
                     </ul>
                 </div>
-                <div class="experience__item">
+                <div
+                    class="experience__item"
+                    data-aos="fade-left"
+                >
                     <h4>Cybersoft - Cyberlearn Academy</h4>
                     <p>August 2020 - May 2021</p>
                     <ul>
@@ -287,7 +352,7 @@
                         <li>
                             Front-end course:
                             HTML5, CSS3, Bootstrap 4,
-                            SASS/SCSS, Javascript, Git, ReactJS, etc
+                            SASS/SCSS, jQuery, Javascript, Git, ReactJS, etc.
                         </li>
                     </ul>
                 </div>
@@ -300,7 +365,7 @@
         id="skill"
     >
         <div class="skill__content">
-            <h1>My Skills</h1>
+            <h1>My <span>Skills</span></h1>
             <ul class="skill__list">
                 <li class="skill__item">
                     <div class="skill__header">
@@ -366,7 +431,8 @@
                     </div>
                 </li>
                 <li class="skill__item">
-                    <div class="skill__header"><span>Frameworks/Libraries <i class="fas fa-chevron-down"></i></span></div>
+                    <div class="skill__header"><span>Frameworks/Libraries <i class="fas fa-chevron-down"></i></span>
+                    </div>
                     <div class="skill__body">
                         <div class="skill__logo">
                             <img
@@ -415,14 +481,14 @@
         id="portfolio"
     >
         <div class="portfolio__content">
-            <h1>My Portfolio</h1>
+            <h1>My <span>Portfolio</span></h1>
             <!-- owl-carousel owl-theme -->
             <div class="owl-carousel owl-theme">
                 <div class="portfolio__items">
                     <div class="portfolio__img">
                         <img
                             src="./assets/img/mercedes-benz-layout.png"
-                            alt="mercedes-benz-layout-project"
+                            alt="mercedes-benz layout project"
                         >
                         <div class="portfolio__overlay">
                             <div class="headline">
@@ -435,8 +501,10 @@
                                     <li>Responsibility: Development and fix bug</li>
                                     <li>Technology: HTML5, CSS3, Bootstrap 5, SASS/SCSS, jQuery, Responsive</li>
                                 </ul>
-                                <button class="btn btn-info"><a href="#">Demo</a></button>
-                                <button class="btn btn-dark"><a href="#">Github</a></button>
+                                <a href="https://mercedes-benz-clone-homepage.netlify.app"><button
+                                        class="btn btn-info">Demo</button></a>
+                                <a href="https://github.com/canh1005/mercedes-benz-layout"><button
+                                        class="btn btn-dark">Github</button></a>
                             </div>
                         </div>
                     </div>
@@ -444,12 +512,28 @@
                 <div class="portfolio__items">
                     <div class="portfolio__img">
                         <img
-                            src=""
-                            alt=""
+                            src="./assets/img/portfolio.png"
+                            alt="my portfolio project"
                         >
-                    </div>
-                    <div class="portfolio__overlay">
-
+                        <div class="portfolio__overlay">
+                            <div class="headline">
+                                <h4>My portfolio</h4>
+                                <p>October 20 - October 22</p>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>Description: Here is my portfolio, where you can find my information and my
+                                        project.</li>
+                                    <li>Responsibility: Development and fix bug</li>
+                                    <li>Technology: HTML5, CSS3, Bootstrap 5, SASS/SCSS, Javascript, jQuery, Responsive.
+                                    </li>
+                                </ul>
+                                <a href="https://nhcanh-portfolio.netlify.app"><button
+                                        class="btn btn-info">Demo</button></a>
+                                <a href="https://github.com/canh1005/my-portfolio"><button
+                                        class="btn btn-dark">Github</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio__items">
@@ -465,17 +549,18 @@
                             </div>
                             <div class="description">
                                 <ul>
-                                    <li>Description: A website for user can watch information about movies, cinema
-                                        systems,
-                                        showtimes and they can book movie tickets. For admin, they can control movies
-                                        and
-                                        users</li>
+                                    <li>Description: A website for users can watch the information about movies, cinema
+                                        systems, showtimes and they can book movie tickets. For admin, they can control
+                                        movies and users.</li>
                                     <li>Responsibility: Development and fix bug</li>
                                     <li>Technology: ReactJS, Redux, Axios, React Router, Material UI, styled-component
                                     </li>
                                 </ul>
-                                <button class="btn btn-info"><a href="#">Demo</a></button>
-                                <button class="btn btn-dark"><a href="#">Github</a></button>
+
+                                <a href="https://tickets-booking-project.netlify.app"><button
+                                        class="btn btn-info">Demo</button></a>
+                                <a href="https://github.com/canh1005/BookingTicket"><button
+                                        class="btn btn-dark">Github</button></a>
                             </div>
                         </div>
                     </div>
@@ -491,7 +576,7 @@
         id="contact"
     >
         <div class="contact__content">
-            <h1>Contact Me</h1>
+            <h1>Contact <span>Me</span></h1>
             <p class="getintouch">Get in touch</p>
             <div class="contact__items row">
                 <div class="info col-12 col-md-6">
@@ -506,12 +591,13 @@
                         </li>
                         <li>
                             <span><i class="fas fa-map-marked-alt"></i> Address</span>
-                            <p>Binh Tan district, Ho Chi Minh city</p>
+                            <p>122/15/8/2 Bui Tu Toan street, Binh Tan district, Ho Chi Minh city</p>
                         </li>
                     </ul>
                 </div>
                 <div class="contact__form col-12 col-md-6">
                     <form class="row">
+                        <span id="noti"></span>
                         <div class="mb-3 col-sm-12 col-md-6">
                             <label
                                 for="email"
@@ -525,7 +611,7 @@
                             >
                             <div
                                 id="emailHelp"
-                                class="form-text"
+                                class="form-text helpText"
                             ></div>
                         </div>
                         <div class="mb-3 col-sm-12 col-md-6">
@@ -541,7 +627,7 @@
                             >
                             <div
                                 id="nameHelp"
-                                class="form-text"
+                                class="form-text helpText"
                             ></div>
                         </div>
                         <div class="mb-3 col-12">
@@ -557,7 +643,7 @@
                             >
                             <div
                                 id="subjectHelp"
-                                class="form-text"
+                                class="form-text helpText"
                             ></div>
                         </div>
                         <div class="mb-3 col-12">
@@ -572,7 +658,7 @@
                             ></textarea>
                             <div
                                 id="messageHelp"
-                                class="form-text"
+                                class="form-text helpText"
                             ></div>
                         </div>
                         <button
@@ -602,6 +688,7 @@
             loop: true,
             margin: 10,
             nav: true,
+            autoplay: true,
             responsive: {
                 0: {
                     items: 1
@@ -617,12 +704,20 @@
     </script>
     <!-- Preload -->
     <script>
-        setTimeout(function(){
+        setTimeout(function () {
             let loader = document.getElementById('preloader');
             loader.style.opacity = 0;
             loader.style.display = 'none';
-        },4000)
+        }, 4000)
     </script>
+    <!-- Animation on Scroll JS -->
+    <script src="./js/aos.js"></script>
+    <!-- Initial AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- SMTP JS -->
+    <script src="./js/smtp.js"></script>
     <!-- Optional JS -->
     <script src="./js/Validation.js"></script>
     <script src="./js/main.js"></script>
