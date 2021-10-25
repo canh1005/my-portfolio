@@ -17,8 +17,10 @@
     />
     <!-- Bootstrap Css -->
     <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
     >
     <!-- Font Awesome -->
     <link
@@ -170,27 +172,45 @@
                         <ul class="header__mobi row">
                             <li class="col-4 nav-item">
                                 <i class="fas fa-home"></i>
-                                <a class="nav-link" href="#home">Home</a>
+                                <a
+                                    class="nav-link"
+                                    href="#home"
+                                >Home</a>
                             </li>
                             <li class="col-4 nav-item">
                                 <i class="fas fa-address-card"></i>
-                                <a class="nav-link" href="#about">About</a>
+                                <a
+                                    class="nav-link"
+                                    href="#about"
+                                >About</a>
                             </li>
                             <li class="col-4 nav-item">
                                 <i class="fas fa-briefcase"></i>
-                                <a class="nav-link" href="#resume">Resume</a>
+                                <a
+                                    class="nav-link"
+                                    href="#resume"
+                                >Resume</a>
                             </li>
                             <li class="col-4 nav-item">
                                 <i class="fas fa-clipboard-list"></i>
-                                <a class="nav-link" href="#skill">Skill</a>
+                                <a
+                                    class="nav-link"
+                                    href="#skill"
+                                >Skill</a>
                             </li>
                             <li class="col-4 nav-item">
                                 <i class="fas fa-image"></i>
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                                <a
+                                    class="nav-link"
+                                    href="#portfolio"
+                                >Portfolio</a>
                             </li>
                             <li class="col-4 nav-item">
                                 <i class="fas fa-envelope"></i>
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a
+                                    class="nav-link"
+                                    href="#contact"
+                                >Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -505,6 +525,15 @@
                                         class="btn btn-info">Demo</button></a>
                                 <a href="https://github.com/canh1005/mercedes-benz-layout"><button
                                         class="btn btn-dark">Github</button></a>
+                                <!-- Button trigger video modal -->
+                                <button
+                                    type="button"
+                                    class="btn btn-success"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#mercedes-benz-video"
+                                >
+                                    Video
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -532,6 +561,15 @@
                                         class="btn btn-info">Demo</button></a>
                                 <a href="https://github.com/canh1005/my-portfolio"><button
                                         class="btn btn-dark">Github</button></a>
+                                <!-- Button trigger video modal -->
+                                <button
+                                    type="button"
+                                    class="btn btn-success"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#portfolio-video"
+                                >
+                                    Video
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -545,7 +583,7 @@
                         <div class="portfolio__overlay">
                             <div class="headline">
                                 <h4>Ticket Booking</h4>
-                                <p>October 11 - October 14</p>
+                                <p>March 2021 - May 2021</p>
                             </div>
                             <div class="description">
                                 <ul>
@@ -553,7 +591,7 @@
                                         systems, showtimes and they can book movie tickets. For admin, they can control
                                         movies and users.</li>
                                     <li>Responsibility: Development and fix bug</li>
-                                    <li>Technology: ReactJS, Redux, Axios, React Router, Material UI, styled-component
+                                    <li>Technology: ReactJS, Redux-thunk, Axios, React Router, Material UI, styled-component
                                     </li>
                                 </ul>
 
@@ -561,6 +599,15 @@
                                         class="btn btn-info">Demo</button></a>
                                 <a href="https://github.com/canh1005/BookingTicket"><button
                                         class="btn btn-dark">Github</button></a>
+                                <!-- Button trigger video modal -->
+                                <button
+                                    type="button"
+                                    class="btn btn-success"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#ticket-booking-video"
+                                >
+                                    Video
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -570,6 +617,135 @@
 
         </div>
     </section>
+    <!-- Mercedes-benz video modal -->
+    <div
+        class="modal fade "
+        id="mercedes-benz-video"
+        tabindex="-1"
+        aria-labelledby="mercedes-benzVideo"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5
+                        class="modal-title"
+                        id="mercedes-benzVideo"
+                    >Demo video</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/kTAF6UKoEfY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio video modal -->
+    <div
+        class="modal fade "
+        id="portfolio-video"
+        tabindex="-1"
+        aria-labelledby="portfolioVideo"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5
+                        class="modal-title"
+                        id="portfolioVideo"
+                    >Demo video</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/kTAF6UKoEfY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ticket booking video modal -->
+    <div
+        class="modal fade "
+        id="ticket-booking-video"
+        tabindex="-1"
+        aria-labelledby="ticket-bookingVideo"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5
+                        class="modal-title"
+                        id="ticket-bookingVideo"
+                    >Demo video</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/kz_TZn1OvSM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Contact -->
     <section
         class="contact"
@@ -678,8 +854,16 @@
         crossorigin="anonymous"
     ></script>
     <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+    ></script>
     <!-- Owl Carousel -->
     <script src="./js/owl.carousel.min.js"></script>
     <!-- Portfolio Carousel -->

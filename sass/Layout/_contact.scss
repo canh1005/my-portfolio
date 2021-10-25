@@ -32,11 +32,11 @@
                         transform: rotate(40deg);
                     }
                 }
-                .helpText{
-                    @include Text($fs-3,$color-orange-0);
+                .helpText,#noti{
+                    @include Text($fs-3,$color-red-0);
+                    font-weight: $fw-700;
                 }
                 #noti{
-                    @include Text($fs-3,$color-orange-0);
                     text-align: center;
                 }
             }

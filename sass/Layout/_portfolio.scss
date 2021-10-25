@@ -2,16 +2,18 @@
     .portfolio__content{
         @include glassBG();
         @include Container();
+        .owl-item.active{
+            .portfolio__overlay{
+                animation: animateTranslateX 3s ease-in-out;
+                .headline{
+                    animation: animateTranslateY 2s ease-in-out 1.25s;
+                }
+                .description{
+                    animation: animateTranslateY 2s ease-in-out 1.5s;
+                }
+            }
+        }
         .portfolio__items{
-            // &:hover{
-            //     .portfolio__overlay{
-            //         max-height: 400px;
-            //         .description{
-            //             opacity: 1;
-            //             transform: translateY(0);
-            //         }
-            //     }
-            // }
             .portfolio__img{
                 position: relative;
                 width: calc(100% - 300px);
@@ -29,13 +31,9 @@
                 background: rgba(0,0,0,0.5);
                 @include Text($fs-0,$color-white);
                 border-radius: 15px;
-                max-height: 110px;
+                max-height: 400px;
                 max-width: 500px;
-                transition: all .5s;
                 .description{
-                    opacity: 0;
-                    transform: translateY(130px);
-                    transition: all .5s;
                     li{
                         list-style: square;
                     }
@@ -47,6 +45,14 @@
 @media screen and (max-width:1023.98px) {
     .portfolio{
         .portfolio__content{
+            .owl-item.active{
+                .portfolio__overlay{
+                    animation: none;
+                    .headline,.description{
+                        animation: none;
+                    }
+                }
+            }
             .portfolio__items{
                 .portfolio__img{
                     width: 100%;
@@ -56,28 +62,28 @@
                     max-height: inherit;
                     max-width: 100%;
                     font-size: $fs-1 - 2;
-                    .description{
-                        opacity: 1;
-                        transform: none;
-
-                    }
                 }
             }
         }
     }
 }
-@media (hover: hover){
-    .portfolio{
-        .portfolio__items{
-            &:hover{
-                    .portfolio__overlay{
-                        max-height: 400px;
-                        .description{
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                    }
-                }
-        }
+@keyframes animateTranslateY{
+    0%,50%{
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes animateTranslateX{
+    0%,50%{
+        transform: translateX(-130px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
     }
 }

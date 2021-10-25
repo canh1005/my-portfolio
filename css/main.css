@@ -707,6 +707,18 @@ header .header__content .header__mobi li a:hover {
   margin-top: 20px;
 }
 
+.portfolio .portfolio__content .owl-item.active .portfolio__overlay {
+  animation: animateTranslateX 3s ease-in-out;
+}
+
+.portfolio .portfolio__content .owl-item.active .portfolio__overlay .headline {
+  animation: animateTranslateY 2s ease-in-out 1.25s;
+}
+
+.portfolio .portfolio__content .owl-item.active .portfolio__overlay .description {
+  animation: animateTranslateY 2s ease-in-out 1.5s;
+}
+
 .portfolio .portfolio__content .portfolio__items .portfolio__img {
   position: relative;
   width: calc(100% - 300px);
@@ -727,15 +739,8 @@ header .header__content .header__mobi li a:hover {
   font-size: 16px;
   color: #ffffff;
   border-radius: 15px;
-  max-height: 110px;
+  max-height: 400px;
   max-width: 500px;
-  transition: all .5s;
-}
-
-.portfolio .portfolio__content .portfolio__items .portfolio__overlay .description {
-  opacity: 0;
-  transform: translateY(130px);
-  transition: all .5s;
 }
 
 .portfolio .portfolio__content .portfolio__items .portfolio__overlay .description li {
@@ -743,6 +748,12 @@ header .header__content .header__mobi li a:hover {
 }
 
 @media screen and (max-width: 1023.98px) {
+  .portfolio .portfolio__content .owl-item.active .portfolio__overlay {
+    animation: none;
+  }
+  .portfolio .portfolio__content .owl-item.active .portfolio__overlay .headline, .portfolio .portfolio__content .owl-item.active .portfolio__overlay .description {
+    animation: none;
+  }
   .portfolio .portfolio__content .portfolio__items .portfolio__img {
     width: 100%;
   }
@@ -752,19 +763,27 @@ header .header__content .header__mobi li a:hover {
     max-width: 100%;
     font-size: 10px;
   }
-  .portfolio .portfolio__content .portfolio__items .portfolio__overlay .description {
+}
+
+@keyframes animateTranslateY {
+  0%, 50% {
+    transform: translateY(-130px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
-    transform: none;
   }
 }
 
-@media (hover: hover) {
-  .portfolio .portfolio__items:hover .portfolio__overlay {
-    max-height: 400px;
+@keyframes animateTranslateX {
+  0%, 50% {
+    transform: translateX(-130px);
+    opacity: 0;
   }
-  .portfolio .portfolio__items:hover .portfolio__overlay .description {
+  100% {
+    transform: translateX(0);
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -815,14 +834,13 @@ header .header__content .header__mobi li a:hover {
   transform: rotate(40deg);
 }
 
-.contact .contact__content .contact__items .contact__form .helpText {
+.contact .contact__content .contact__items .contact__form .helpText, .contact .contact__content .contact__items .contact__form #noti {
   font-size: 18px;
-  color: #FFC371;
+  color: #DC143C;
+  font-weight: 700;
 }
 
 .contact .contact__content .contact__items .contact__form #noti {
-  font-size: 18px;
-  color: #FFC371;
   text-align: center;
 }
 
